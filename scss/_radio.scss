@@ -1,0 +1,36 @@
+﻿.radio {
+    color: #ffffff;
+    width: 2.5rem;
+    height: 2rem;
+    line-height: 2rem;
+    border: 1px solid #ffffff;
+    border-radius: 0.6rem;
+    padding-left: 0.5rem;
+    position: relative;
+
+    i {
+        display: block;
+        position: absolute;
+        top: calc(50% - 0.25rem);
+        right: 0.5rem;
+        border-radius: 50%;
+        background-color: #ffffff;
+        z-index: 3;
+        width: 0.5rem;
+        height: 0.5rem;
+    }
+
+    input {
+        visibility: hidden;
+        position: absolute;
+        top: 0;
+        right: 0;
+        z-index: 5;
+        width: 2rem;
+        height: 2rem;
+    }
+
+    input[checked='checked'] + i {
+        background-color: #ed3f1d;
+    }
+}

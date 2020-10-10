@@ -1,0 +1,268 @@
+@charset "UTF-8";
+.flex {
+  display: flex;
+}
+.flex.column {
+  flex-direction: column;
+}
+.flex.column.column-center {
+  align-content: center;
+}
+.flex.column.column-space-between {
+  align-content: space-between;
+}
+.flex.column.column-start {
+  align-content: flex-start;
+}
+.flex.column.column-end {
+  align-content: flex-end;
+}
+.flex.center {
+  justify-content: center;
+}
+.flex.start {
+  justify-content: flex-start;
+}
+.flex.end {
+  justify-content: flex-end;
+}
+.flex.space-between {
+  justify-content: space-between;
+}
+.flex.space-around {
+  justify-content: space-around;
+}
+.flex.middle {
+  align-items: center;
+}
+.flex.stretch {
+  align-items: stretch;
+}
+.flex.top {
+  align-items: flex-start;
+}
+.flex.bottom {
+  align-items: flex-end;
+}
+.flex.wrap {
+  flex-wrap: wrap;
+}
+.flex.grow {
+  flex-grow: 1;
+}
+
+.flex-one {
+  flex: 1;
+}
+
+.flex-two {
+  flex: 2;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  /*background: url(../bk.jpg) 0 0 no-repeat;
+  background-position: top;
+  background-size: 100% auto;*/
+  background-color: #b497af;
+  font-family: "站酷快乐体2016修订版";
+  position: relative;
+}
+
+.pc-show {
+  display: block;
+}
+
+.pc-hide {
+  display: none;
+}
+
+@media (max-width: 1044px) {
+  .tablet-show {
+    display: block;
+  }
+
+  .tablet-hide {
+    display: none;
+  }
+}
+@media (max-width: 1044px) and (max-width: 1000px) {
+  .phone-show {
+    display: block;
+  }
+
+  .phone-hide {
+    display: none;
+  }
+}
+@font-face {
+  font-family: "站酷快乐体2016修订版";
+  src: url("../fonts/站酷快乐体2016修订版.woff2") format("woff2"), url("../fonts/站酷快乐体2016修订版.woff") format("woff"), url("../fonts/站酷快乐体2016修订版.ttf") format("truetype"), url("../fonts/站酷快乐体2016修订版.eot") format("embedded-opentype"), url("../fonts/站酷快乐体2016修订版.svg") format("svg");
+}
+.select {
+  color: #ffffff;
+  width: 2.5rem;
+  height: 2rem;
+  line-height: 2rem;
+  border: 1px solid #ffffff;
+  border-radius: 0.6rem;
+  padding-left: 0.5rem;
+  position: relative;
+}
+.select i {
+  content: "";
+  border-style: solid;
+  border-color: #ffffff transparent transparent transparent;
+  border-width: 0.5rem 0.3rem;
+  position: absolute;
+  top: 0.75rem;
+  right: 0.5rem;
+  display: block;
+}
+
+.options {
+  position: fixed;
+  overflow-y: scroll;
+  width: 100%;
+  color: #ffffff;
+  height: 20rem;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #b497af;
+  text-align: center;
+  display: none;
+  z-index: 20;
+}
+.options .option {
+  line-height: 2;
+}
+
+.radio {
+  color: #ffffff;
+  width: 2.5rem;
+  height: 2rem;
+  line-height: 2rem;
+  border: 1px solid #ffffff;
+  border-radius: 0.6rem;
+  padding-left: 0.5rem;
+  position: relative;
+}
+.radio i {
+  display: block;
+  position: absolute;
+  top: calc(50% - 0.25rem);
+  right: 0.5rem;
+  border-radius: 50%;
+  background-color: #ffffff;
+  z-index: 3;
+  width: 0.5rem;
+  height: 0.5rem;
+}
+.radio input {
+  visibility: hidden;
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 5;
+  width: 2rem;
+  height: 2rem;
+}
+.radio input[checked=checked] + i {
+  background-color: #ed3f1d;
+}
+
+.header {
+  width: 100%;
+  height: auto;
+  margin: 0;
+}
+
+.form {
+  width: 100%;
+  height: auto;
+  background: url(../image/form-bk.png) no-repeat 0 0;
+  background-size: 100% 100%;
+  background-position: top;
+}
+.form .label {
+  color: #ffffff;
+  font-size: 1rem;
+  padding-left: 0.5rem;
+}
+.form .input-group {
+  width: 70%;
+  margin: 0 auto;
+  /*margin*/
+}
+.form .input-group:first-of-type {
+  padding-top: 2rem;
+}
+.form .input-group .label {
+  margin-bottom: 0.3rem;
+}
+.form .input-group input {
+  border: none;
+  border-radius: 0.6rem;
+  height: 2rem;
+  line-height: 2rem;
+  padding: 0 20px;
+  width: calc(100% - 40px);
+  margin-bottom: 0.3rem;
+  font-size: 1rem;
+  color: #e2553a;
+}
+.form .select-group {
+  width: 70%;
+  margin: 0 auto;
+  margin-top: 0.5rem;
+}
+.form .select-group .label {
+  width: calc(20% - 0.5rem);
+}
+.form .select-group .select {
+  width: 20%;
+  margin-left: 3%;
+}
+.form .radio-group {
+  width: 70%;
+  margin: 0 auto;
+  margin-top: 0.8rem;
+}
+.form .radio-group .label {
+  width: calc(20% - 0.5rem);
+}
+.form .radio-group .radio {
+  width: 20%;
+  margin-left: 3%;
+}
+.form .btns {
+  padding-top: 1.2rem;
+  padding-bottom: 3.2rem;
+}
+.form .btns .btn-submit {
+  display: block;
+  text-decoration: none;
+  background-color: #ffffff;
+  width: 27%;
+  margin: 0 auto;
+  height: 2rem;
+  line-height: 2rem;
+  border-radius: 0.5rem;
+  color: #e2553a;
+  text-align: center;
+}
+
+.bk-cover {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(255, 255, 255, 0.7);
+  z-index: 10;
+  display: none;
+}
+
+/*# sourceMappingURL=css.css.map */

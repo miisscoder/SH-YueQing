@@ -1,0 +1,37 @@
+﻿body {
+    margin: 0;
+    padding: 0;
+    /*background: url(../bk.jpg) 0 0 no-repeat;
+    background-position: top;
+    background-size: 100% auto;*/
+    background-color: #b497af;
+    font-family: '站酷快乐体2016修订版';
+    position: relative;
+}
+.pc-show {
+    display:block;
+}
+.pc-hide {
+    display: none;
+}
+
+@media(max-width: 1044px){
+    .tablet-show {
+        display: block;
+    }
+    .tablet-hide {
+        display: none;
+    }
+
+
+
+    @media(max-width:1000px) {
+        .phone-show {
+            display: block;
+        }
+
+        .phone-hide {
+            display: none;
+        }
+    }
+}
