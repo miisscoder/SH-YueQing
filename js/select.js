@@ -43,4 +43,5 @@ $('body').append(htmlDay);
 $('.bk-cover').click(function () {
     $('.options').hide();
     $('.bk-cover').hide();
+    $('.modal').hide();
 });
