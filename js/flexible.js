@@ -8,8 +8,16 @@
             var rem = width * 100 / widthDesign;
             $('html').css('font-size', rem + 'px');
         }
+
         if ($('.form').height() + $('.header').height() < height) {
             $('.form').css('height', (height - $('.header').height()) + 'px');
+        }
+
+        if ($('body').hasClass('game')) {
+            $('.image').css('height', $('.image img')[0].clientHeight + 'px');
+            var w = $('.puzzle')[0].clientWidth;
+            $('.piece-1').css('width', (w / 3 - 1 * 2) + 'px');
+            $('.piece-2').css('width', (w / 3 * 2 - 1 * 2) + 'px');
         }
     }
 

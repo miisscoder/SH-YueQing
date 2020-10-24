@@ -5,67 +5,102 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no" />
     <meta name="format-detection" content="telephone=no" />
     <meta name="apple-mobile-web-app-capable" content="yes" />
-    <title>缘来紫竹</title>
+    <meta http-equiv="Access-Control-Allow-Origin" content="*" />
+    <title></title>
     <link rel="stylesheet" type="text/css" href="css/css.css" />
-    
 </head>
-<body>
-    <img src="image/top.png" class="header" />
-    <div class="form">
-        <div class="tip">* 名额有限，先到先得</div>
-        <div class="input-group">
-            <div class="label">公司</div>
-            <input type="text" />
-        </div>
-        <div class="input-group">
-            <div class="label">姓名</div>
-            <input type="text" />
-        </div>
-        <div class="input-group">
-            <div class="label">手机号</div>
-            <input type="tel" />
-        </div>
-        <div class="input-group">
-            <div class="label">邮箱</div>
-            <input type="email" />
-        </div>
-        <div class="select-group flex start middle">
-            <div class="label">生日</div>
-            <div id="year" class="select" >
-                年<i></i>
+<body class="index">
+    <div class="header">
+        <div class="container">
+            <div class="search-group flex center middle">
+                <input /><div class="btn-search flex center middle"><svg class="icon-search" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 50"><path d="M 21 3 C 11.601563 3 4 10.601563 4 20 C 4 29.398438 11.601563 37 21 37 C 24.355469 37 27.460938 36.015625 30.09375 34.34375 L 42.375 46.625 L 46.625 42.375 L 34.5 30.28125 C 36.679688 27.421875 38 23.878906 38 20 C 38 10.601563 30.398438 3 21 3 Z M 21 7 C 28.199219 7 34 12.800781 34 20 C 34 27.199219 28.199219 33 21 33 C 13.800781 33 8 27.199219 8 20 C 8 12.800781 13.800781 7 21 7 Z"></path></svg></div>
             </div>
-            <div id="month" class="select">
-                月<i></i>
+            <div class="tabs flex space-between middle" data-id="1">
+                <div class="tab" data-active="true" data-tab="1">软件下载</div>
+                <div class="tab" data-active="false" data-tab="2">使用教程</div>
+                <div class="tab" data-active="false" data-tab="3">故障排查</div>
             </div>
-            <div id="day" class="select">
-                日<i></i>
-            </div>
-        </div>
-        <div class="radio-group flex start middle">
-            <div class="label">性别</div>
-            <div class="radio man" >男<input type="radio" name="gender" value="man" /><i></i></div>
-            <div class="radio woman">女<input type="radio" name="gender" value="woman" /><i></i></div>
-        </div>
-        <div class="btns">
-            <a href="javascript:;" class="btn-submit">
-                提交
-            </a>
         </div>
     </div>
-    <div class="bk-cover"></div>
-    <div class="modal">
-        <div class="modal-container">
-            <div class="modal-content">
-                您已成功报名，<br />
-                稍后请注意查收确认<br />
-                短信，谢谢。
+    <div class="main">
+        <div class="subtabs" data-id="1">
+            <div class="container flex center middle" >
+                <div class="subtab sub-tab" data-active="true" data-id="1">打印机</div>
+                <div class="subtab sub-tab" data-active="false" data-id="2">扫描枪</div>
+                <div class="subtab sub-tab" data-active="false" data-id="3">回卷器</div>
+                <div class="subtab sub-tab" data-active="false" data-id="4">配件</div>
+                <div class="subtab filter-tab flex center middle">筛选<i class="icon-filter"></i></div>
+                <i class="icon-triangle"></i>
             </div>
-            <div class="btn-modal"></div>
+        </div>
+        <div class="results" data-tab="1" data-active="true">
+            <div class="container">
+                <div class="items">
+                    <div class="no-item">没有找到相关信息</div>
+                    <div class="item flex start middle">
+                        <div class="left flex start middle">
+                            <div class="image">
+                                <img src="http://yueqinshop.com/temp/833b2815d5134c11ad4736fdd84a7c2b.jpg" />
+                            </div>
+                            <div class="text">
+                                <div class="name">Dlabel安卓版</div>
+                                <div class="date">2020-04-07</div>
+                                <div class="detail">
+                                    点击下载
+                                </div>
+                            </div>
+                        </div>
+                        <a href="javascript:;" class="btn-download">下载</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="results" data-tab="2" data-active="false">
+            <div class="container items flex space-between stretch wrap">
+                <div class="no-item">没有找到相关信息</div>
+                <a href="javascript:;" class="item">
+                    <img src="http://yueqinshop.com/temp/a54a8a7e973642a6a80aa3dee35b60f9.jpg" />
+                    <div class="name">佳博</div>
+                </a><a href="javascript:;" class="item">
+                    <img src="http://yueqinshop.com/temp/a54a8a7e973642a6a80aa3dee35b60f9.jpg" />
+                    <div class="name">佳博</div>
+                </a><a href="javascript:;" class="item">
+                    <img src="http://yueqinshop.com/temp/a54a8a7e973642a6a80aa3dee35b60f9.jpg" />
+                    <div class="name">佳博</div>
+                </a>
+            </div>
+        </div>
+        <div class="results" data-tab="3" data-active="false">
+            <div class="container items">
+                <div class="no-item">没有找到相关信息</div>
+                <a href="javascript:;" class="item">
+                    <div class="name">
+                        2020报错
+                    </div>
+                    <div class="read"><span class="number">0</span>人阅读</div>
+                    <div class="date">2020-04-10</div>
+                </a>
+            </div>
         </div>
     </div>
-    <script type="text/javascript" src="js/jquery.min.js"></script>
-    <script type="text/javascript" src="js/select.js"></script>
-    <script type="text/javascript" src="js/flexible.js"></script>
-    <script type="text/javascript" src="js/index.js"></script>
+    <div class="filter">
+        <div class="filter-header">
+            筛选
+        </div>
+        <div class="filter-container">
+            <div class="label">品牌</div>
+            <div class="flex start top wrap btn-items btn-items-brands">
+            </div>
+            <div class="label">接口</div>
+            <div class="flex start top wrap btn-items btn-items-interfaces">
+            </div>
+            <a href="javascript:;" class="btn-filter">确定</a>
+        </div>
+    </div>
+    <div class="cover-bk"></div>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/flexible.js"></script>
+    <script src="js/data.js"></script>
+    <script src="js/index.js"></script>
 </body>
 </html>

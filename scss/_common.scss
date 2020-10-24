@@ -1,12 +1,12 @@
 ﻿body {
     margin: 0;
     padding: 0;
-    /*background: url(../bk.jpg) 0 0 no-repeat;
-    background-position: top;
-    background-size: 100% auto;*/
-    background-color: #b497af;
-    font-family: '站酷快乐体2016修订版';
     position: relative;
+    color: #555555;
+}
+.container{
+    width:1280px;
+    margin:0 auto;
 }
 .pc-show {
     display:block;
@@ -14,24 +14,38 @@
 .pc-hide {
     display: none;
 }
+input,textarea{
+    outline:none;
+    font-size:1rem;
 
-@media(max-width: 1044px){
+}
+a{
+    text-decoration:none;
+    color:inherit;
+}
+@media(max-width: 1044px) {
     .tablet-show {
         display: block;
     }
+
     .tablet-hide {
         display: none;
     }
 
+    .container {
+        width: 950px;
+    }
+}
+@media(max-width:1000px) {
+    .phone-show {
+        display: block;
+    }
 
+    .phone-hide {
+        display: none;
+    }
 
-    @media(max-width:1000px) {
-        .phone-show {
-            display: block;
-        }
-
-        .phone-hide {
-            display: none;
-        }
+    .container {
+        width: 90%;
     }
 }
